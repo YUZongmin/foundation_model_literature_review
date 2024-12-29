@@ -4,120 +4,12 @@ This document provides a systematic analysis of foundation models across differe
 
 ## Domain Comparison Matrix
 
-### Language Models
-
-#### Core Representation Properties
-- Contextual embeddings
-- Token relationships
-- Hierarchical structure
-- Attention patterns
-
-#### Scaling Laws
-- Performance scales with model & data size
-- Clear emergent capabilities
-- Smooth learning curves
-- Predictable performance improvements
-
-#### Transfer Capabilities
-- Strong zero-shot abilities
-- Good few-shot learning
-- Domain adaptation
-
-#### Data Structure
-- Sequential
-- Discrete tokens
-- Clear hierarchical structure
-
-#### Self-Supervision Paradigms
-- Next token prediction
-- Masked language modeling
-- Contrastive learning
-
-### Vision Models
-
-#### Core Representation Properties
-- Visual features hierarchies
-- Spatial relationships
-- Multi-scale representations
-- Local-to-global feature extraction
-
-#### Scaling Laws
-- Benefits from scale but less smoothly than language
-- Architecture dependent scaling
-- Non-linear scaling with resolution
-
-#### Transfer Capabilities
-- Good transfer of low-level features
-- Domain adaptation requires fine-tuning
-- Compositional transfer
-
-#### Data Structure
-- Grid-based
-- Continuous values
-- Spatial hierarchies
-
-#### Self-Supervision Paradigms
-- Masked image modeling
-- Contrastive learning
-- Image reconstruction
-
-### PDEs (Low-Dim)
-
-#### Core Representation Properties
-- Function space mappings
-- Physical constraints
-- Spatial/temporal correlations
-- Conservation laws
-
-#### Scaling Laws
-- Limited by physical dimensionality
-- Data collection scales poorly
-- O(N^d) computational complexity for d dimensions
-- Memory requirements grow exponentially with resolution
-
-#### Transfer Capabilities
-- Good within similar physics
-- Limited across physics types
-- Domain-specific adaptation
-
-#### Data Structure
-- Continuous fields
-- Physics-based structure
-- Clear symmetries
-
-#### Self-Supervision Paradigms
-- Physics-informed losses
-- Solution reconstruction
-- Operator learning
-
-### PDEs (High-Dim)
-
-#### Core Representation Properties
-- Point-wise approximations
-- High-dim function spaces
-- Complex physical relationships
-- Multi-scale physical interactions
-
-#### Scaling Laws
-- Curse of dimensionality in computation
-- Exponential complexity with dimensions
-- Data requirements grow exponentially
-- Poor sample efficiency
-
-#### Transfer Capabilities
-- Very limited transfer
-- Problem-specific solutions
-- High adaptation cost
-
-#### Data Structure
-- Complex coupling
-- Less clear structure
-- High-dimensional manifolds
-
-#### Self-Supervision Paradigms
-- Individual point fitting
-- Local physics constraints
-- Limited self-supervision
+| Domain              | Core Representation Properties                                                                                                       | Scaling Laws                                                                                                                                               | Transfer Capabilities                                                                                         | Data Structure                                                               | Self-Supervision Paradigms                                                              |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| **Language Models** | • Contextual embeddings<br>• Token relationships<br>• Hierarchical structure<br>• Attention patterns                                 | • Performance scales with model & data size<br>• Clear emergent capabilities<br>• Smooth learning curves<br>• Predictable performance improvements         | • Strong zero-shot abilities<br>• Good few-shot learning<br>• Domain adaptation                               | • Sequential<br>• Discrete tokens<br>• Clear hierarchical structure          | • Next token prediction<br>• Masked language modeling<br>• Contrastive learning         |
+| **Vision Models**   | • Visual features hierarchies<br>• Spatial relationships<br>• Multi-scale representations<br>• Local-to-global feature extraction    | • Benefits from scale but less smoothly than language<br>• Architecture dependent scaling<br>• Non-linear scaling with resolution                          | • Good transfer of low-level features<br>• Domain adaptation requires fine-tuning<br>• Compositional transfer | • Grid-based<br>• Continuous values<br>• Spatial hierarchies                 | • Masked image modeling<br>• Contrastive learning<br>• Image reconstruction             |
+| **PDEs (Low-Dim)**  | • Function space mappings<br>• Physical constraints<br>• Spatial/temporal correlations<br>• Conservation laws                        | • Limited by physical dimensionality<br>• Data collection scales poorly<br>• O(N^d) computational complexity<br>• Memory requirements grow exponentially   | • Good within similar physics<br>• Limited across physics types<br>• Domain-specific adaptation               | • Continuous fields<br>• Physics-based structure<br>• Clear symmetries       | • Physics-informed losses<br>• Solution reconstruction<br>• Operator learning           |
+| **PDEs (High-Dim)** | • Point-wise approximations<br>• High-dim function spaces<br>• Complex physical relationships<br>• Multi-scale physical interactions | • Curse of dimensionality in computation<br>• Exponential complexity with dimensions<br>• Data requirements grow exponentially<br>• Poor sample efficiency | • Very limited transfer<br>• Problem-specific solutions<br>• High adaptation cost                             | • Complex coupling<br>• Less clear structure<br>• High-dimensional manifolds | • Individual point fitting<br>• Local physics constraints<br>• Limited self-supervision |
 
 ## Next Steps
 
@@ -129,4 +21,3 @@ This document provides a systematic analysis of foundation models across differe
 ## Literature References
 
 (To be added as we verify each claim)
-
