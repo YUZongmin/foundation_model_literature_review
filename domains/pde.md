@@ -1,6 +1,6 @@
-# Vision Models as Foundation Models
+# PDE Models as Foundation Models
 
-## 1. What Makes Foundation Models Work in solving Vision tasks?
+## 1. What Makes Foundation Models Work in solving PDEs?
 
 ## 2. Fundamental Limitations
 

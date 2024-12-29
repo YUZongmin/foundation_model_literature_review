@@ -8,5 +8,12 @@ This document analyzes the applicability and limitations of foundation models ac
 | ------------------- | ------------------------------------------- | ------------------------------------- | ----------------------------------------- |
 | **Language Models** |                                             |                                       |                                           |
 | **Vision Models**   |                                             |                                       |                                           |
-| **PDEs (Low-Dim)**  |                                             |                                       |                                           |
-| **PDEs (High-Dim)** |                                             |                                       |                                           |
+| **PDEs**            |                                             |                                       |                                           |
+
+## Guideline
+
+For each domain, focus on one key question:
+
+What makes foundation models work/not work in this domain?
+What are the fundamental limitations?
+What evidence supports these conclusions?
